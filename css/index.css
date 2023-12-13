@@ -1,0 +1,82 @@
+/* 상단영역 */
+header{
+  width: 1440px; /* 너비지정*/
+  height: 90px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.7);
+  position: absolute;
+  width: 100%;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 8px 13px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 8px 13px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+header .wrap{  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header h1{
+  text-align: center;
+}
+header h1 a{
+  font-family: 'Black Han Sans', sans-serif;
+  color: black;
+  font-size: 33px;
+  text-transform: capitalize;
+} 
+header a{
+  font-family: 'Black Han Sans', sans-serif;
+}
+header ul{
+  display: flex;
+  font-family: 'Black Han Sans', sans-serif;
+  gap: 30px;
+}
+header ul li{
+  margin: auto;
+  font-size: 20px;
+  font-family: 'Black Han Sans', sans-serif;
+}
+/* header ul li a{
+    color: black;
+    text-transform: uppercase;
+} */
+/* header ul li a::before{
+  content: "/";
+} */
+/* 자식선택자 : 바로 아래에 있는 선택자(태그) */
+header div.wrap>a{
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* 타이틀영역 */
+div#title{
+  background-color: #eee;
+  background-image: url(https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center bottom;
+}
+/*하위선택자*/
+div#title div.wrap{ 
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  font-family: 'Black Han Sans', sans-serif;
+}
+div#title div.wrap h2{
+  color: #032611;
+  font-size: 75px;
+  letter-spacing: 2px;
+}
+div p{
+    
+  font-size: 45px;
+}
