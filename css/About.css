@@ -21,9 +21,9 @@ section#About .wrap p{
 
 section#About .wrap ul{
   font-size: 25px;
-  /*! width: 400%; */
+  width: 400%;
   letter-spacing: 4px;
-  padding: 60px 80px;
+  padding: 50px 70px;
 }
 
 section#About .wrap ul li{

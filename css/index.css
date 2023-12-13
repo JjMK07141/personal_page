@@ -68,7 +68,7 @@ div#title div.wrap{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 40px;
+  gap: 45px;
   font-family: 'Black Han Sans', sans-serif;
 }
 div#title div.wrap h2{
