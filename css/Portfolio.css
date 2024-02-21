@@ -31,11 +31,11 @@ section#Portfolio .wrap ul li img{
     width: 600px;
 }
 section#Portfolio .wrap ul li div{
-
-    padding: 50px 50px;
+    padding: 100px 80px;
 }
 section#Portfolio .wrap ul li div h3{
     font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom: 40px;
 }
 section#Portfolio .wrap ul li div p{
 
@@ -45,10 +45,10 @@ section#Portfolio .wrap ul li div ul{
     width: 200%;
 }
 section#Portfolio .wrap ul li div ul li{
-
+    display: none;
 }
 section#Portfolio .wrap ul li div span{
-
+    display: none;
 }
 section#Portfolio .wrap ul li div span button{
 
