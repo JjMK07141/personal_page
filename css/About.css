@@ -28,6 +28,7 @@ section#About .wrap ul{
 
 section#About .wrap ul li{
   font-family: 'Noto Sans KR', sans-serif;
+  padding: 20px 0;
 }
 
 section#About .wrap div{
