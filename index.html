@@ -3,24 +3,38 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이세희 개인홈피</title>
+
+    <!-- meta tag -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jjmk07141.github.io/personal_page/">
+    <meta property="og:description" content="웹퍼블리셔 취업을 위한 개인포트폴리오 사이트입니다.">
+    <meta property="og:keywords" content="개인포트폴리오 웹디자인 웹퍼블리셔 개인홈페이지">
+    <meta property="og:title" content="이세희 개인홈페이지">
+    <meta name="description" content="웹퍼블리셔 취업을 위한 개인포트폴리오 사이트입니다.">
+    <meta name="keywords" content="개인포트폴리오 웹디자인 웹퍼블리셔 개인홈페이지">
+    <meta  name="og:image"  content="https://github.com/JjMK07141/personal_page/blob/img/me_emogi.jpg"/>
+
+    <title>이세희 개인홈페이지</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-    <!-- //구글폰트 -->
+
+    <!-- 구글폰트 -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@600&display=swap">
-    <!-- 구글폰트// -->
+
+    <!-- css link -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/About.css">
     <link rel="stylesheet" href="css/Skill.css">
     <link rel="stylesheet" href="css/Portfolio.css">
     <link rel="stylesheet" href="css/Contact.css">
     <link rel="stylesheet" href="css/font.css">
+
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
+        // $(document).ready(function(){
             $('.pfitem').slick({
             infinite: true,
             slidesToShow: 3,
@@ -49,8 +63,17 @@
             ]   
         });
     });
+    
+        $('.pfitem').slick({
+        dots: true,
+        infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
     </script>
 </head>
+
 <body>
     <!-- 상단영역 -->
     <header>
@@ -125,7 +148,7 @@
             </section>
             <!-- Portfolio -->
             <section id="Portfolio" class="paddingT50 paddingB50">
-                <div class="wrap paddingT50  paddingR50 paddingL50">
+                <div class="wrap paddingT50 paddingR50 paddingL50">
                     <h2 class="h2">Portfolio</h2>
                     <p class="p">총 6개의 작업물이 있습니다</p>
                     <ul class="flex pfitem">
@@ -134,13 +157,13 @@
                             <div class="text">
                                 <h3 class="h3">Accuniq</h3>
                                 <p>기업체 홈페이지</p>
-                                <ul class="flex between">
+                                <!-- <ul class="flex between">
                                     <li>pc</li>
                                     <li>반응형</li>
                                     <li>하드코딩</li>
                                     <li>제작 100%</li>
                                 </ul>
-                                <span><button>상세보기</button></span>
+                                <span><button>상세보기</button></span> -->
                             </div>
                         </li>
                     </ul>
