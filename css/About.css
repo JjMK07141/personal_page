@@ -21,9 +21,12 @@ section#About .wrap ul{
   letter-spacing: 4px;
   padding: 50px 70px;
 }
+section#About .wrap ul span{
+  
+}
 section#About .wrap ul li{
   font-family: 'Noto Sans KR', sans-serif;
-  padding: 25px 0;
+  padding-bottom: 50px;
 }
 section#About .wrap div{
   width: 85%;
