@@ -4,7 +4,7 @@ header{
   height: 90px;
   margin: 0 auto;
   background-color: rgba(255,255,255,0.7);
-  position: absolute;
+  position: fixed;
   width: 100%;
     -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 8px 13px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 8px 13px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -38,13 +38,12 @@ header ul li{
   font-size: 20px;
   font-family: 'Black Han Sans', sans-serif;
 }
-/* header ul li a{
-    color: black;
-    text-transform: uppercase;
-} */
-/* header ul li a::before{
-  content: "/";
-} */
+header ul li a{
+
+}
+header ul li a::before{
+
+}
 /* 자식선택자 : 바로 아래에 있는 선택자(태그) */
 header div.wrap>a{
   font-size: 0;
@@ -64,7 +63,7 @@ div#title{
 }
 /*하위선택자*/
 div#title div.wrap{ 
-  height: 800px;
+  height: 885px;
   display: flex;
   flex-direction: column;
   justify-content: center;

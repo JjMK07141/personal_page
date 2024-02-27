@@ -75,3 +75,6 @@ main .h2::before{
 .center{
   text-align: center;
 }
+html,body{
+  height:100%;
+}

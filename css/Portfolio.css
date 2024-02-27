@@ -2,6 +2,7 @@ section#Portfolio{
 
 }
 section#Portfolio .wrap{
+    height: 800px !important;
     margin-bottom: 50px;
     box-sizing: border-box;
     border-radius: 30px;
