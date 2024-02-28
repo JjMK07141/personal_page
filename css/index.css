@@ -20,29 +20,27 @@ header h1{
   text-align: center;
 }
 header h1 a{
-  font-family: 'Black Han Sans', sans-serif;
   color: black;
-  font-size: 33px;
+  font-size: 0;
   text-transform: capitalize;
-} 
+}
+header h1 a img{
+  width: 30%;
+}
 header a{
   font-family: 'Black Han Sans', sans-serif;
 }
 header ul{
   display: flex;
-  font-family: 'Black Han Sans', sans-serif;
   gap: 30px;
 }
 header ul li{
   margin: auto;
-  font-size: 20px;
-  font-family: 'Black Han Sans', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
 }
 header ul li a{
-
-}
-header ul li a::before{
-
+  font-weight: 700;
 }
 /* 자식선택자 : 바로 아래에 있는 선택자(태그) */
 header div.wrap>a{
@@ -74,6 +72,7 @@ div#title div.wrap h2{
   color: #032611;
   font-size: 75px;
   letter-spacing: 2px;
+  font-weight: 600;
 }
 div#title div.wrap span{
   

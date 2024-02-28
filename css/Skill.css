@@ -13,9 +13,8 @@ section#Skill .wrap{
   
 }
   section#Skill .wrap p{
-  
-  font-family: 'Noto Sans KR', sans-serif;
   font-size: 25px;
+  font-weight: 700;
 }
   
   section#Skill .wrap ul{
