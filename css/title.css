@@ -1,0 +1,25 @@
+/* 타이틀영역 */
+ div#title{
+
+ }
+ /*하위선택자*/
+ div#title .wrap{ 
+   height: 885px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 45px;
+   font-family: 'Black Han Sans', sans-serif;
+ }
+ div#title .wrap h2{
+   color: #032611;
+   font-size: 75px;
+   letter-spacing: 2px;
+   font-weight: 600;
+ }
+ div#title .wrap span{
+   
+ }
+ div p{
+   font-size: 45px;
+ }

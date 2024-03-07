@@ -16,16 +16,16 @@
 
 }.paddingL50{
   padding-left: 50px;
-
 }
 .h1{
   font-size: 64px;
 }
 .h2{
+  padding-top: 15px;
   font-size: 54px;
-  font-family: 'Black Han Sans'sans-serif;
-  margin-bottom: 20px;
-  
+  font-family: 'Black Han Sans', sans-serif;
+  margin-bottom: 25px;
+  color: #032611;
 }
 .h3{
   font-size: 44px;
@@ -77,4 +77,9 @@ main .h2::before{
 }
 html,body{
   height:100%;
+}
+.bg{
+  background-image: url(https://github.com/JjMK07141/personal_page/blob/main/img/L_main.jpg?raw=true);
+  background-repeat: no-repeat;
+  height: 100%;
 }

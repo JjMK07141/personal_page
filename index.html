@@ -12,7 +12,7 @@
     <meta property="og:title" content="이세희 개인홈페이지">
     <meta name="description" content="웹퍼블리셔 취업을 위한 개인포트폴리오 사이트입니다.">
     <meta name="keywords" content="개인포트폴리오 웹디자인 웹퍼블리셔 개인홈페이지">
-    <meta  name="og:image"  content="https://raw.githubusercontent.com/JjMK07141/personal_page/main/img/me_emogi.jpg"/>
+    <meta name="og:image"  content="https://raw.githubusercontent.com/JjMK07141/personal_page/main/img/me_emogi.jpg"/>
     
     <title>이세희 개인홈페이지</title>
     <link rel="stylesheet" href="css/reset.css">
@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@600&display=swap">
 
     <!-- css link -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/About.css">
     <link rel="stylesheet" href="css/Skill.css">
     <link rel="stylesheet" href="css/Portfolio.css">
@@ -32,6 +33,7 @@
     
     <!-- javascript -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+    <!-- 페이지 스크롤링 -->
     <script>
         $(document).ready(function(){
             //대메뉴클릭시 페이지스크롤링 이동
@@ -46,7 +48,7 @@
             //about
             $("header ul li:nth-child(2) a").click(
                 function(){
-                    $("html,body").animate({scrollTop:$(window).height()-95},1000); 
+                    $("html,body").animate({scrollTop:$(window).height()-165},1000); 
                     return false; 
                 }
             );
@@ -54,7 +56,7 @@
             //skill
             $("header ul li:nth-child(3) a").click(
                 function(){
-                    $("html,body").animate({scrollTop:$(window).height()*2-75},1000); 
+                    $("html,body").animate({scrollTop:$(window).height()*2-175},1000); 
                     return false; 
                 }
             );
@@ -62,7 +64,7 @@
             //portfolio
             $("header ul li:nth-child(4) a").click(
                 function(){
-                    $("html,body").animate({scrollTop:$(window).height()*3-60},1000); 
+                    $("html,body").animate({scrollTop:$(window).height()*3-180},1000); 
                     return false; 
                     }
             );
@@ -70,7 +72,7 @@
             //contact
             $("header ul li:nth-child(5) a").click(
                 function(){
-                    $("html,body").animate({scrollTop:$(window).height()*4-35},1000); 
+                    $("html,body").animate({scrollTop:$(window).height()*4-180},1000); 
                     return false; 
                 }
             );
@@ -83,50 +85,6 @@
             // );
         })
     </script>
-    
-    <!-- slick -->
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript">
-        // $(document).ready(function(){
-            $('.pfitem').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            speed:1000,
-            dots:true,
-            arrows:true,
-            responsive:[
-                {
-                breakpoint: 769,
-                settings: {
-                    infinite: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    speed:1000,
-                    dots:true,
-                    arrows:false,
-                    centerMode: true,
-                    centerPadding: '20px'
-                }
-                }
-            ]   
-        });
-    });
-    
-        // $('.pfitem').slick({
-        // dots: true,
-        // infinite: true,
-        //     speed: 500,
-        //     fade: true,
-        //     cssEase: 'linear'
-        // });
-    </script> -->
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -135,11 +93,60 @@
             AOS.init();
         });
       </script>
+
+      <!-- 마우스휠 -->
+      <script type="text/javascript">
+        window.onload = function () {
+            var elm = ".box";
+            $(elm).each(function (index) {
+                // 개별적으로 Wheel 이벤트 적용
+                $(this).on("mousewheel DOMMouseScroll", function (e) {
+                    e.preventDefault();
+                    var delta = 0;
+                    if (!event) event = window.event;
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 120;
+                        if (window.opera) delta = -delta;
+                    } 
+                    else if (event.detail)
+                        delta = -event.detail / 3;
+                    var moveTop = $(window).scrollTop();
+                    var elmSelecter = $(elm).eq(index);
+                    // 마우스휠을 위에서 아래로
+                    if (delta < 0) {
+                        if ($(elmSelecter).next() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).next().offset().top;
+                            }catch(e){}
+                        }
+                    // 마우스휠을 아래에서 위로
+                    } else {
+                        if ($(elmSelecter).prev() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).prev().offset().top;
+                            }catch(e){}
+                        }
+                    }
+                     
+                    // 화면 이동 0.8초(800)
+                    $("html,body").stop().animate({
+                        scrollTop: moveTop + 'px'
+                    }, {
+                        duration: 1000, complete: function () {
+                        }
+                    });
+                });
+            });
+
+            $("main>section").unwrap();
+            $("section").css("height","850px");
+        }
+    </script>
 </head>
 
-<body>
+<body class="bg">
     <!-- 상단영역 -->
-    <header>
+    <header class="box">
         <div class="wrap">
             <h1>
                 <a href="#">
@@ -157,7 +164,7 @@
         </div>
     </header>
     <!-- 타이틀영역 -->
-    <div id="title">
+    <div id="title" class="box">
         <div class="wrap">
             <h2 data-aos="fade-up" data-aos-duration="6000" class="h2 center">
                 <br>
@@ -168,110 +175,111 @@
                 </span>
             </h2>
         </div>
-        <!-- 메인영역 -->
-        <main>
-            <!-- About -->
-            <section id="About" class="paddingT50 paddingB50">
-                <div data-aos="fade-up" data-aos-duration="5000" class="wrap paddingT50 paddingR50 paddingL50">
-                    <h2 class="h2">About</h2>
-                    <div class="flex between">
-                        <img src="img/me_emogi.jpg" alt="본인 사진">
-                        <ul class="list paddingT50 paddingB50 paddingR50 paddingL50">
-                            <li>안녕하세요. 신입 웹 퍼블리셔입니다.</li>
-                            <li>이름 : 이세희</li>
-                            <li>나이 : 26</li>
-                            <li>학력 : 신구대학교 섬유의상코디과 졸업</li>
-                            <li>경력 : 주인정보시스템</li>
-                            <li>교육 : #이젠모란웹디자인 #웹퍼블리싱과정 #5개월수료</li>
-                            <span></span>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <!-- Skill -->
-            <section id="Skill" class="paddingT50 paddingB50">
-                <div data-aos="fade-up" data-aos-duration="5000" class="wrap paddingT50 paddingR50 paddingL50">
-                    <h2 class="h2">Skill</h2>
-                    <p class="p">공부하면서 익힌 스킬들입니다.</p>
-                    <ul class="list flex between">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>jQuery</li>
-                        <li>Javascript</li>
-                        <li>젠코딩</li>
-                        <li>SASS</li>
-                        <li>웹표준</li>
-                        <li>웹접근성</li>
-                        <li>Photoshop</li>
-                        <li>Illustrator</li>
-                        <li>In Design</li>
-                        <li>Premiere Pro</li>
-                        <li>After Effects</li>
-                        <li>Visual Studio</li>
-                        <li>Kakao oven</li>
+    </div>
+
+    <!-- 메인영역 -->
+    <main>
+        <!-- About -->
+        <section id="About" class="box">
+            <div data-aos="fade-up" data-aos-duration="5000" class="wrap paddingT50 paddingR50 paddingL50">
+                <h2 class="h2">About</h2>
+                <div class="flex between">
+                    <img src="img/me_emogi.jpg" alt="본인 사진">
+                    <ul class="list paddingT50 paddingB50 paddingR50 paddingL50">
+                        <li>안녕하세요. 신입 웹 퍼블리셔입니다.</li>
+                        <li>이름 : 이세희</li>
+                        <li>나이 : 26</li>
+                        <li>학력 : 신구대학교 섬유의상코디과 졸업</li>
+                        <li>경력 : 주인정보시스템</li>
+                        <li>교육 : #이젠모란웹디자인 #웹퍼블리싱과정 #5개월수료</li>
+                        <span></span>
                     </ul>
                 </div>
-            </section>
-            <!-- Portfolio -->
-            <section id="Portfolio" class="paddingT50 paddingB50">
-                <div data-aos="fade-up" data-aos-duration="5000" class="wrap paddingT50 paddingR50 paddingL50">
-                    <h2 class="h2">Portfolio</h2>
-                    <p class="p">총 6개의 작업물이 있습니다</p>
-                    <ul class="flex pfitem">
-                        <li class="flex between">
-                            <img src="img/pf1_Acc.jpg" alt="Accuniq">
-                            <div class="text">
-                                <h3 class="h3">Accuniq</h3>
-                                <p>기업체 홈페이지</p>
-                                <!-- <ul class="flex between">
-                                    <li>pc</li>
-                                    <li>반응형</li>
-                                    <li>하드코딩</li>
-                                    <li>제작 100%</li>
-                                </ul>
-                                <span><button>상세보기</button></span> -->
-                            </div>
+            </div>
+        </section>
+        <!-- Skill -->
+        <section id="Skill" class="box">
+            <div data-aos="fade-up" data-aos-duration="5000" class="wrap paddingT50 paddingR50 paddingL50">
+                <h2 class="h2">Skill</h2>
+                <p class="p">공부하면서 익힌 스킬들입니다.</p>
+                <ul class="list flex between">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>jQuery</li>
+                    <li>Javascript</li>
+                    <li>젠코딩</li>
+                    <li>SASS</li>
+                    <li>웹표준</li>
+                    <li>웹접근성</li>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>In Design</li>
+                    <li>Premiere Pro</li>
+                    <li>After Effects</li>
+                    <li>Visual Studio</li>
+                    <li>Kakao oven</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Portfolio -->
+        <section id="Portfolio" class="box">
+            <div data-aos="fade-up" data-aos-duration="5000" class="wrap paddingT50 paddingR50 paddingL50">
+                <h2 class="h2">Portfolio</h2>
+                <p class="p">총 6개의 작업물이 있습니다</p>
+                <ul class="flex pfitem">
+                    <li class="flex between">
+                        <img src="img/pf1_Acc.jpg" alt="Accuniq">
+                        <div class="text">
+                            <h3 class="h3">Accuniq</h3>
+                            <p>기업체 홈페이지</p>
+                            <!-- <ul class="flex between">
+                                <li>pc</li>
+                                <li>반응형</li>
+                                <li>하드코딩</li>
+                                <li>제작 100%</li>
+                            </ul>
+                            <span><button>상세보기</button></span> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section id="Contact" class="box">
+            <div data-aos="fade-up" data-aos-duration="5000" class="wrap paddingT50 paddingR50 paddingL50">
+                <h2 class="h2">Contact</h2>
+                <div class="center">
+                    <ul>
+                        <li>
+                            <p>Gmail</p>
+                            <br>
+                            <a href="#">
+                                <img src="img/mail.svg" alt="Gmail">
+                            </a>
+                        </li>
+                        <li>
+                            <p>GitHub</p>
+                            <br>
+                            <a href="#">
+                                <img src="img/github.svg" alt="GitHub">
+                            </a>
+                        </li>
+                        <li>
+                            <p>Notion</p>
+                            <br>
+                            <a href="#">
+                                <img src="img/notion.svg" alt="Notion">
+                            </a>
                         </li>
                     </ul>
                 </div>
-            </section>
-            <!-- Contact -->
-            <section id="Contact" class="paddingT50 paddingB50">
-                <div data-aos="fade-up" data-aos-duration="5000" class="wrap paddingT50 paddingR50 paddingL50">
-                    <h2 class="h2">Contact</h2>
-                    <div class="center">
-                        <ul>
-                            <li>
-                                <p>Gmail</p>
-                                <br>
-                                <a href="#">
-                                    <img src="img/mail.svg" alt="Gmail">
-                                </a>
-                            </li>
-                            <li>
-                                <p>GitHub</p>
-                                <br>
-                                <a href="#">
-                                    <img src="img/github.svg" alt="GitHub">
-                                </a>
-                            </li>
-                            <li>
-                                <p>Notion</p>
-                                <br>
-                                <a href="#">
-                                    <img src="img/notion.svg" alt="Notion">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- 하단영역 -->
-        <footer>
-            <h1 class="p">이세희 포트폴리오 개인홈페이지</h1>
-            <p class="p">2024 Copyright © Lee Sehee All Rights Reserved</p>
-        </footer>
-    </div>
+            </div>
+        </section>
+    </main>
+    <!-- 하단영역 -->
+    <footer>
+        <h1 class="p">이세희 포트폴리오 개인홈페이지</h1>
+        <p class="p">2024 Copyright © Lee Sehee All Rights Reserved</p>
+    </footer>
 </body>
 </html>

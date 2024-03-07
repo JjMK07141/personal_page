@@ -1,15 +1,14 @@
 section#About{
 }
 section#About .wrap{
-  height: 800px !important;
-  margin-bottom: 50px;
+  height: 750px;
+  /*! margin-bottom: 50px; */
   box-sizing: border-box;
   border-radius: 30px;
   background: rgba(255,255,255,0.5);
 }
 section#About .wrap h2{
-  /*! padding-bottom: 15px; */
-  width: 35%;
+  width: 15%;
 }
 section#About .wrap p{
   font-size: 25px;
@@ -30,8 +29,9 @@ section#About .wrap ul li{
   padding-bottom: 50px;
 }
 section#About .wrap div{
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
+  align-items: center;
 }
 section#About .wrap div img{
   width: 475px;
