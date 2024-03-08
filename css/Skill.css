@@ -1,9 +1,8 @@
 section#Skill{
-
+  margin-bottom: 50px;
 }
 section#Skill .wrap{
   height: 750px;
-  /*! margin-bottom: 50px; */
   box-sizing: border-box;
   border-radius: 30px;
   background: rgba(255,255,255,0.5);
@@ -14,6 +13,9 @@ section#Skill .wrap h2{
 section#Skill .wrap p{
   font-size: 25px;
   font-weight: 700;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: initial;
 }
 section#Skill .wrap ul{
   padding: 50px;

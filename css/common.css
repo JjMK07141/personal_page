@@ -41,6 +41,7 @@
 }
 .p{
   font-size: 16px;
+  font-family: 'Black Han Sans', sans-serif;
 }
 /* felx */
 .flex{
@@ -52,7 +53,7 @@
 .center{
   justify-content: center;
 }
-/* 가상선택자 */
+/* 가상선택자 작대기 */
 main .h2::before{
   content: "";
   font-size: 25px;

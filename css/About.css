@@ -1,8 +1,9 @@
 section#About{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 section#About .wrap{
   height: 750px;
-  /*! margin-bottom: 50px; */
   box-sizing: border-box;
   border-radius: 30px;
   background: rgba(255,255,255,0.5);
