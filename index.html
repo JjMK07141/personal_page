@@ -48,7 +48,7 @@
             //about
             $("header ul li:nth-child(2) a").click(
                 function(){
-                    $("html,body").animate({scrollTop:$(window).height()-65},1000); 
+                    $("html,body").animate({scrollTop:$(window).height()-30},1000); 
                     return false; 
                 }
             );
@@ -94,8 +94,8 @@
         });
       </script>
 
-      <!-- 마우스휠 -->
-      <!-- <script type="text/javascript">
+    <!-- 마우스휠 -->
+    <script type="text/javascript">
         window.onload = function () {
             var elm = ".box";
             $(elm).each(function (index) {
@@ -139,12 +139,30 @@
             });
 
             $("main>section").unwrap();
-            $("section").css("height","850px");
+            $("section").css("height","auto");
         }
-    </script> -->
+    </script>
+    
+    <!-- 타이틀 영상 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/jquery.mb.YTPlayer.min.js"></script>
+    <style>
+        #open{
+            display: block !important;
+            height: 400px;
+            width: 600px;
+        }
+    </style>
+    <script>
+        jQuery( function() { 
+        //$는 jQuery 단축표기, $(document).ready(function(){})에서 $(document).ready...를 단축표기해서 $(function(){})
+            jQuery( '#open' ).YTPlayer();
+        });
+    </script>
+
 </head>
 
-<body class="bg">
+<body>
     <!-- 상단영역 -->
     <header class="box">
         <div class="wrap">
@@ -167,8 +185,6 @@
     <div id="title" class="box">
         <div class="wrap">
             <h2 data-aos="fade-up" data-aos-duration="6000" class="h2 center">
-                <br>
-                <br>
                 WELCOME TO 
                 <span class="block h1">
                     SeHee's PORTFOLIO
@@ -194,6 +210,21 @@
                         <li>교육 : #이젠모란웹디자인 #웹퍼블리싱과정 #5개월수료</li>
                         <span></span>
                     </ul>
+                </div>
+                <!-- 유튜브 영상 -->
+                <div id="open" class="player" data-property="{
+                    videoURL: 'https://youtu.be/-BUsazhzJBQ',
+                    mute: true,
+                    showControls: false,
+                    useOnMobile: true,
+                    quality: 'highres',
+                    containment: 'body',
+                    loop: true,
+                    autoPlay: true,
+                    stopMovieOnBlur: false,
+                    startAt: 0,
+                    opacity: 1
+                  }">
                 </div>
             </div>
         </section>

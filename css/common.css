@@ -79,8 +79,3 @@ main .h2::before{
 html,body{
   height:100%;
 }
-.bg{
-  background-image: url(https://github.com/JjMK07141/personal_page/blob/main/img/L_main.jpg?raw=true);
-  background-repeat: no-repeat;
-  height: 100%;
-}

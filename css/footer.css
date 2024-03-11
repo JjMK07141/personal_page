@@ -8,9 +8,9 @@ footer{
    align-items: center;
    font-family: 'Noto Sans KR', sans-serif;
 }
-footer h1{
-
+footer h1.p{
+   font-family: initial;
 }
-footer p{
-
+footer p.p{
+   font-family: initial;
 }

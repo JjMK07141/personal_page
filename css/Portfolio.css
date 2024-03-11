@@ -14,6 +14,7 @@ section#Portfolio .wrap h2{
 section#Portfolio .wrap p{
     font-size: 25px;
     font-weight: 700;
+    font-family: initial;
 }
 section#Portfolio .wrap>ul{
     margin-top: 35px;
@@ -31,6 +32,7 @@ section#Portfolio .wrap ul li img{
 }
 section#Portfolio .wrap ul li div{
     padding: 100px 80px;
+    font-family: initial;
 }
 section#Portfolio .wrap ul li div h3{
     padding-bottom: 40px;
