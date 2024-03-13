@@ -1,6 +1,17 @@
 section#About{
   margin: 70px auto;
 }
+section#About:before{
+  content: "";
+  width: 50%;
+  height: 400px;
+  display: block;
+  position: absolute;
+  right: 0px;
+  bottom: -100%;
+  background-color: rgba(157, 193, 141, 0.73);
+  overflow: hidden;
+}
 section#About .wrap{
 /*   height: 750px; */
   height: 100%;
