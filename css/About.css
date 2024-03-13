@@ -1,11 +1,10 @@
 section#About{
-  margin-top: 50px;
+  margin: 70px auto;
 }
 section#About .wrap{
-  height: 750px;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background: rgba(255,255,255,0.5);
+/*   height: 750px; */
+  height: 100%;
+  width: 100%;
 }
 section#About .wrap h2{
   width: 15%;
@@ -16,21 +15,21 @@ section#About .wrap p{
   font-family: 'Noto Sans KR', sans-serif;
 }
 section#About .wrap ul{
-  font-size: 25px;
-  width: 400%;
+  font-size: 23px;
   letter-spacing: 4px;
-  padding: 50px 70px;
+  padding: 0 10%;
 }
 section#About .wrap ul span{
   
 }
 section#About .wrap ul li{
   font-family: 'Noto Sans KR', sans-serif;
-  padding-bottom: 50px;
+  /*! padding-bottom: 50px; */
+  line-height: 2;
 }
 section#About .wrap div{
   width: 90%;
-  margin: 0 auto;
+  margin: 70px auto;
   align-items: center;
 }
 section#About .wrap div img{
@@ -38,5 +37,5 @@ section#About .wrap div img{
   height: 480px;
   border-radius: 20px 50px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 8px 13px -5px, rgb(3, 38, 17) 0px 8px 16px -8px;
-  padding: 10px 10px;
+  padding: 20px 20px;
 }

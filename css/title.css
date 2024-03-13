@@ -1,9 +1,9 @@
 /* 타이틀영역 */
 div#title{
-  background-image: url(https://raw.githubusercontent.com/JjMK07141/personal_page/main/img/title.jpg);
-/*   background-color: #ccc; */
-  background-repeat: no-repeat;
-  height: 100%;
+/*   background-image: url(https://raw.githubusercontent.com/JjMK07141/personal_page/main/img/LOW_title.jpg); */
+background-color: #ccc;
+/*   background-repeat: no-repeat; */
+/*   height: 100%; */
 }
 /*하위선택자*/
 div#title .wrap{ 
@@ -15,15 +15,18 @@ div#title .wrap{
   font-family: 'Black Han Sans', sans-serif;
 }
 div#title .wrap h2{
-  color: #032611;
-  font-size: 75px;
+  color: white;
+  font-size: 60px;
   letter-spacing: 2px;
   font-weight: 600;
   padding-top: 7%;
-  text-shadow: -1px -1px white, -1px -1px white, 1px 1px white, 1px 1px white;
+/*   text-shadow: -1px -1px white, -1px -1px white, 1px 1px white, 1px 1px white; */
+  font-family: 'Black Han Sans', sans-serif;
 }
 div#title .wrap span{
-  
+  font-size: 75px;
+  opacity: 1;
+  color: #98d3b0;
 }
 div p{
   font-size: 45px;

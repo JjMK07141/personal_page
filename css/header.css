@@ -1,20 +1,24 @@
 /* 상단영역 */
 header{
-  width: 1440px; /* 너비지정*/
-  height: 80px;
+  height: 70px;
   margin: 0 auto;
-  background-color: rgb(255, 255, 255);
+/*   background-color: rgb(33, 40, 33,0.7); */
   position: fixed;
   z-index: 1;
   width: 100%;
-    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 8px 13px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 8px 13px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+/*     -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 8px 13px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 8px 13px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
 }
 header .wrap{  
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
+}
+header .wrap *{
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
 }
 
 header h1{
@@ -26,14 +30,15 @@ header h1 a{
   text-transform: capitalize;
 }
 header h1 a img{
-  width: 30%;
+  width: 115px; 
+  height: 55px;
 }
 header a{
   font-family: 'Black Han Sans', sans-serif;
 }
 header ul{
   display: flex;
-  gap: 30px;
+  /*! gap: 30px; */
 }
 header ul li{
   margin: auto;
@@ -41,7 +46,12 @@ header ul li{
   font-weight: 700;
 }
 header ul li a{
-  font-weight: 700;
+  font-weight: 300;
+  color: #eee;
+  padding: 0 24px;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 19px;
 }
 /* 자식선택자 : 바로 아래에 있는 선택자(태그) */
 header div.wrap>a{

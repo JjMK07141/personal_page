@@ -1,55 +1,53 @@
 section#Portfolio{
-
+  margin: 75px auto;
 }
 section#Portfolio .wrap{
-    height: 750px;
-    margin-bottom: 50px;
-    box-sizing: border-box;
-    border-radius: 30px;
-    background: rgba(255,255,255,0.5);
+  height: 100%;
+  width: 100%;
 }
 section#Portfolio .wrap h2{
-
+  width: 30%;
 }
 section#Portfolio .wrap p{
-    font-size: 25px;
-    font-weight: 700;
-    font-family: initial;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #474747;
 }
-section#Portfolio .wrap>ul{
-    margin-top: 35px;
-    background-color: #03261175;
-    border-radius: 20px;
-    padding-top: 65px;
-    padding-bottom: 50px;
+section#Portfolio .wrap ul{
+  background-color: #155a3175;
+  border-radius: 20px;
+  padding: 50px;
+  margin: 60px 1px;
 }
 section#Portfolio .wrap ul li{
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 section#Portfolio .wrap ul li img{
-    width: 600px;
+  width: 600px;
 }
 section#Portfolio .wrap ul li div{
-    padding: 100px 80px;
-    font-family: initial;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 25px;
+  font-weight: 500; 
 }
 section#Portfolio .wrap ul li div h3{
-    padding-bottom: 40px;
-    font-weight: 700;
+  padding-bottom: 40px;
+  font-weight: 700;
 }
 section#Portfolio .wrap ul li div p{
 
 }
 section#Portfolio .wrap ul li div ul{
-    font-family: 'Noto Sans KR', sans-serif;
-    width: 200%;
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 200%;
 }
 section#Portfolio .wrap ul li div ul li{
-    display: none;
+  display: none;
 }
 section#Portfolio .wrap ul li div span{
-    display: none;
+  display: none;
 }
 section#Portfolio .wrap ul li div span button{
 

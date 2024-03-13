@@ -1,11 +1,9 @@
 section#Contact{
+  margin-top: 70px;
 }
 section#Contact .wrap{
-  height: 750px;
-  margin-bottom: 50px;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background: rgba(255,255,255,0.5);
+  height: 100%;
+  width: 100%;
   display: grid;
 }
 
@@ -45,7 +43,8 @@ section#Contact .wrap ul li:nth-child(3){
 section#Contact .wrap ul li p{
   width: 150px;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 section#Contact .wrap ul li a{
 }

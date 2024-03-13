@@ -20,6 +20,10 @@
 
     <!-- 구글폰트 -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@600&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
 
     <!-- css link -->
     <link rel="stylesheet" href="css/header.css">
@@ -36,7 +40,7 @@
     <!-- 페이지 스크롤링 -->
     <script>
         $(document).ready(function(){
-            //대메뉴클릭시 페이지스크롤링 이동
+            //헤더 메뉴 클릭시 페이지스크롤링 이동
             //home
             $("header ul li:nth-child(1) a").click(
                 function(){
@@ -48,7 +52,7 @@
             //about
             $("header ul li:nth-child(2) a").click(
                 function(){
-                    $("html,body").animate({scrollTop:$(window).height()-30},1000); 
+                    $("html,body").animate({scrollTop:$(window).height()},1000); 
                     return false; 
                 }
             );
@@ -56,7 +60,7 @@
             //skill
             $("header ul li:nth-child(3) a").click(
                 function(){
-                    $("html,body").animate({scrollTop:$(window).height()*2-105},1000); 
+                    $("html,body").animate({scrollTop:$(window).height()*2},1000); 
                     return false; 
                 }
             );
@@ -64,7 +68,7 @@
             //portfolio
             $("header ul li:nth-child(4) a").click(
                 function(){
-                    $("html,body").animate({scrollTop:$(window).height()*3-120},1000); 
+                    $("html,body").animate({scrollTop:$(window).height()*3-100},1000); 
                     return false; 
                     }
             );
@@ -72,7 +76,7 @@
             //contact
             $("header ul li:nth-child(5) a").click(
                 function(){
-                    $("html,body").animate({scrollTop:$(window).height()*4-160},1000); 
+                    $("html,body").animate({scrollTop:$(window).height()*4},1000); 
                     return false; 
                 }
             );
@@ -95,7 +99,7 @@
       </script>
 
     <!-- 마우스휠 -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         window.onload = function () {
             var elm = ".box";
             $(elm).each(function (index) {
@@ -139,48 +143,52 @@
             });
 
             $("main>section").unwrap();
-            $("section").css("height","auto");
+            $("section").css("height","100%");
         }
-    </script>
+    </script> -->
     
-    <!-- 타이틀 영상 -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
+    <!-- 영상 -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/jquery.mb.YTPlayer.min.js"></script>
     <style>
-        #open{
+        /* #open{
             display: block !important;
             height: 400px;
             width: 600px;
-        }
+        } */
+        /* #title{
+            z-index: -1;
+        } */
     </style>
     <script>
         jQuery( function() { 
         //$는 jQuery 단축표기, $(document).ready(function(){})에서 $(document).ready...를 단축표기해서 $(function(){})
-            jQuery( '#open' ).YTPlayer();
+            jQuery( '#title' ).YTPlayer();
         });
-    </script>
+    </script> -->
 
 </head>
 
-<body>
+<body class="color">
     <!-- 상단영역 -->
     <header class="box">
         <div class="wrap">
             <h1>
                 <a href="#">
-                    <img src="img/logo.png" style="width: 115px; height: 55px;" alt="LSH's PORTFOLIO">
+                    <img src="img/logo.png" alt="LSH's PORTFOLIO">
                 </a>
             </h1>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#" class="sasun">About</a></li>
-                <li><a href="#" class="sasun">Skill</a></li>
-                <li><a href="#" class="sasun">Portfolio</a></li>
-                <li><a href="#" class="sasun">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-            <a href="#">Menu</a>
+            <!-- <a href="#">Menu</a> -->
         </div>
     </header>
+
     <!-- 타이틀영역 -->
     <div id="title" class="box">
         <div class="wrap">
@@ -191,46 +199,46 @@
                 </span>
             </h2>
         </div>
+        <!-- 유튜브 영상 -->
+        <!-- <div id="title" class="player" data-property="{
+            videoURL: 'https://youtu.be/-BUsazhzJBQ',
+            mute: true,
+            showControls: false,
+            useOnMobile: true,
+            quality: 'highres',
+            containment: 'self',
+            loop: true,
+            autoPlay: true,
+            stopMovieOnBlur: false,
+            startAt: 0,
+            opacity: 1
+          }">
+        </div> -->
     </div>
 
     <!-- 메인영역 -->
     <main>
         <!-- About -->
-        <section id="About" class="box paddingT50 paddingB50">
-            <div data-aos="fade-up" data-aos-duration="5000" class="wrap paddingT50 paddingR50 paddingL50">
+        <section id="About" class="box paddingT50 paddingB50 paddingR50 paddingL50">
+            <div data-aos="fade-up" data-aos-duration="5000" class="wrap paddingT50 paddingB50 ">
                 <h2 class="h2">About</h2>
-                <div class="flex between">
+                <div class="flex center">
                     <img src="img/me_emogi.jpg" alt="본인 사진">
-                    <ul class="list paddingT50 paddingB50 paddingR50 paddingL50">
+                    <ul class="list center">
                         <li>안녕하세요. 신입 웹 퍼블리셔입니다.</li>
                         <li>이름 : 이세희</li>
                         <li>나이 : 26</li>
                         <li>학력 : 신구대학교 섬유의상코디과 졸업</li>
                         <li>경력 : 주인정보시스템</li>
                         <li>교육 : #이젠모란웹디자인 #웹퍼블리싱과정 #5개월수료</li>
-                        <span></span>
                     </ul>
                 </div>
-                <!-- 유튜브 영상 -->
-                <div id="open" class="player" data-property="{
-                    videoURL: 'https://youtu.be/-BUsazhzJBQ',
-                    mute: true,
-                    showControls: false,
-                    useOnMobile: true,
-                    quality: 'highres',
-                    containment: 'body',
-                    loop: true,
-                    autoPlay: true,
-                    stopMovieOnBlur: false,
-                    startAt: 0,
-                    opacity: 1
-                  }">
-                </div>
+
             </div>
         </section>
         <!-- Skill -->
-        <section id="Skill" class="box paddingT50 paddingB50">
-            <div data-aos="fade-up" data-aos-duration="5000" class="wrap paddingT50 paddingR50 paddingL50">
+        <section id="Skill" class="box paddingT50 paddingB50 paddingL50 paddingR50">
+            <div data-aos="fade-up" data-aos-duration="5000" class="wrap">
                 <h2 class="h2">Skill</h2>
                 <p class="p">공부하면서 익힌 스킬들입니다.</p>
                 <ul class="list flex between">
@@ -253,14 +261,14 @@
             </div>
         </section>
         <!-- Portfolio -->
-        <section id="Portfolio" class="box paddingT50 paddingB50">
-            <div data-aos="fade-up" data-aos-duration="5000" class="wrap paddingT50 paddingR50 paddingL50">
+        <section id="Portfolio" class="box paddingT50 paddingB50 paddingL50 paddingR50">
+            <div data-aos="fade-up" data-aos-duration="5000" class="wrap">
                 <h2 class="h2">Portfolio</h2>
                 <p class="p">총 6개의 작업물이 있습니다</p>
-                <ul class="flex pfitem">
-                    <li class="flex between">
+                <ul class="flex pfitem"> <!-- pfitem은 슬릭 -->
+                    <li class="flex">
                         <img src="img/pf1_Acc.jpg" alt="Accuniq">
-                        <div class="text">
+                        <div class="block">
                             <h3 class="h3">Accuniq</h3>
                             <p>기업체 홈페이지</p>
                             <!-- <ul class="flex between">
@@ -276,8 +284,8 @@
             </div>
         </section>
         <!-- Contact -->
-        <section id="Contact" class="box paddingT50 paddingB50">
-            <div data-aos="fade-up" data-aos-duration="5000" class="wrap paddingT50 paddingR50 paddingL50">
+        <section id="Contact" class="box paddingT50 paddingB50 paddingL50 paddingR50">
+            <div data-aos="fade-up" data-aos-duration="5000" class="wrap">
                 <h2 class="h2">Contact</h2>
                 <div class="center">
                     <ul>
