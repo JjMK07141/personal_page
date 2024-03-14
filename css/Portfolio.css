@@ -31,6 +31,7 @@ section#Portfolio .wrap ul li div{
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 25px;
   font-weight: 500; 
+  margin: 0 auto;
 }
 section#Portfolio .wrap ul li div h3{
   padding-bottom: 40px;
@@ -38,6 +39,7 @@ section#Portfolio .wrap ul li div h3{
 }
 section#Portfolio .wrap ul li div p{
 
+  padding-top: 70px;
 }
 section#Portfolio .wrap ul li div ul{
   font-family: 'Noto Sans KR', sans-serif;

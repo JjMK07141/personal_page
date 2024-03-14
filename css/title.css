@@ -1,18 +1,17 @@
 /* 타이틀영역 */
 div#title{
-/*   background-image: url(https://raw.githubusercontent.com/JjMK07141/personal_page/main/img/LOW_title.jpg); */
-background-color: #ccc;
-/*   background-repeat: no-repeat; */
-/*   height: 100%; */
+
+}
+.inline-YTPlayer{
+  height: 50%;
 }
 /*하위선택자*/
 div#title .wrap{ 
-  height: 885px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 45px;
-  font-family: 'Black Han Sans', sans-serif;
+  display: none;
 }
 div#title .wrap h2{
   color: white;

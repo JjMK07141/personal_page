@@ -1,12 +1,24 @@
 section#Contact{
   margin-top: 70px;
+  position: relative;
+}
+section#Contact:before{
+  content: "";
+  width: 60%;
+  height: 88.8%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  background: linear-gradient(to left, white, #93b3a0);
+  overflow: hidden;
+  z-index: -1;
 }
 section#Contact .wrap{
   height: 100%;
   width: 100%;
   display: grid;
 }
-
 section#Contact .wrap h2{
   padding-bottom: 30px;
   width: 35%;
