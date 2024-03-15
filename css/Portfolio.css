@@ -21,36 +21,57 @@ section#Portfolio .wrap ul{
   margin: 60px 1px;
 }
 section#Portfolio .wrap ul li{
-  width: 80%;
-  margin: 0 auto;
+  font-family: 'Noto Sans KR', sans-serif;
 }
-section#Portfolio .wrap ul li img{
-  width: 600px;
+section#Portfolio .wrap ul li a{
+  width: 100%;
+  height: 100%;
 }
-section#Portfolio .wrap ul li div{
+section#Portfolio .wrap ul li a figure{
+
+}
+section#Portfolio .wrap ul li a figure img{
+  width: 365px;
+  height: 240px;
+}
+section#Portfolio .wrap ul li a figure figcaption{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+  opacity:0;
+  transition:1s;
+}
+section#Portfolio .wrap ul li a figure figcaption h3{
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  
+}
+section#Portfolio .wrap ul li a figure:hover figcaption{
+  opacity: 1;
+}
+section#Portfolio .wrap ul li a figure figcaption h3 span{
+
+}
+section#Portfolio .wrap ul li a figure figcaption li{
+  text-align: center;
+}
+/* section#Portfolio .wrap ul .port{
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 25px;
   font-weight: 500; 
-  margin: 0 auto;
-}
-section#Portfolio .wrap ul li div h3{
-  padding-bottom: 40px;
-  font-weight: 700;
-}
-section#Portfolio .wrap ul li div p{
-
-  padding-top: 70px;
-}
-section#Portfolio .wrap ul li div ul{
+  margin: 0 30px;
+} */
+/* section#Portfolio .wrap ul .port ul{
   font-family: 'Noto Sans KR', sans-serif;
-  width: 200%;
-}
-section#Portfolio .wrap ul li div ul li{
-  display: none;
-}
-section#Portfolio .wrap ul li div span{
-  display: none;
-}
-section#Portfolio .wrap ul li div span button{
-
-}
+  width: 100% !important;
+} */
