@@ -34,10 +34,13 @@ footer a.top{
    gap: 10px;
    text-transform: uppercase;
  }
- footer a.top:hover{
-   background-color: #4e6657;
-   border-radius: 100%; 
-   transition: all 2s;
+ footer a.top:hover{
+   background-color: #4e6657;
+   border-radius: 100%; 
+   transition: all 1.5s ease-out;
+ }
+ footer a.top:not(:hover){
+  transition: all 1s ease-out;
  }
  footer a.top::before{
    content: "";
