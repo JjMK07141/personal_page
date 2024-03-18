@@ -39,6 +39,7 @@
 .h1{
   font-size: 64px;
 }
+/* 대제목 */
 .h2{
   padding-top: 15px;
   font-size: 54px;
@@ -77,6 +78,7 @@
 .center{
   justify-content: center;
 }
+
 /* 가상선택자 작대기 */
 /* main .h2::before{
   content: "";
@@ -89,19 +91,24 @@
   margin-left: 10px;
   display: none;
 } */
-.sasun::before{
+
+/* 가상선택자 사선 */
+/* .sasun::before{
   content: "/";
   margin-right: 30px;
   color: #6999;
-}
+} */
+
 /* 블럭, 인라인 */
 .block{
   display: block;
 }
+
 /* 글자 가운데 정렬 */
 .tcenter{
   text-align: center;
 }
+
 /* 제이쿼리 페이지 스크롤 */
 html,body{
   height:100%;

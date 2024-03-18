@@ -1,10 +1,15 @@
 section#Skill{
-  margin: 70px auto;
+  /*! margin: 70px auto; */
   background-color: #155a3175;
+  height: 100vh;
+  box-sizing: border-box;
 }
 section#Skill .wrap{
   height: 100%;
   width: 100%;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
 }
 section#Skill .wrap h2{
   
@@ -19,7 +24,7 @@ section#Skill .wrap ul{
   padding: 50px;
   flex-wrap: wrap;
   gap: 70px;
-  margin: 60px 130px;
+  margin: 100px 130px;
 }
 section#Skill .wrap ul li{
   width: 100px;

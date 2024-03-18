@@ -34,20 +34,22 @@ footer a.top{
    gap: 10px;
    text-transform: uppercase;
  }
- footer a.top:hover{
-   background-color: #4e6657;
-   border-radius: 100%; 
-   transition: all 1.5s ease-out;
- }
- footer a.top:not(:hover){
-  transition: all 1s ease-out;
+ footer a.top:hover{
+   background-color: #4e6657;
+   border-radius: 100%; 
+   transition: all 1.5s ease-out;
  }
+ footer a.top:not(:hover){
+  transition: all 1s ease-out;
+ }
+/* 탑버튼 화살표 */
  footer a.top::before{
    content: "";
    background-image: url(../img/north_arrow.svg);
    width: 24px;
    height: 24px;
  }
+/* hover시 화살표 위로 살짝 가게 */
  footer a.top:hover::before{
    transform: translateY(-7px);
  }

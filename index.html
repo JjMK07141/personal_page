@@ -45,8 +45,7 @@
             $("header ul li:nth-child(1) a").click(
                 function(){
                     $("html,body").animate({scrollTop:"0px"},1000); 
-                    return false; 
-                }
+               }
             );
 
             //about
@@ -68,7 +67,7 @@
             //portfolio
             $("header ul li:nth-child(4) a").click(
                 function(){
-                    $("html,body").animate({scrollTop:$(window).height()*3-100},1000); 
+                    $("html,body").animate({scrollTop:$(window).height()*3},1000); 
                     return false; 
                     }
             );
@@ -81,12 +80,13 @@
                 }
             );
 
-            //홈버튼 클릭시 원래 색상으로 표시
-            // $("header ul li:nth-child(1) a").click(
-            //     function(){
-            //         $("header ul.gnb li a").removeClass();
-            //     }
-            // );
+            // top
+            $("footer a.top").click(
+                function(){
+                    $("html,body").animate({scrollTop:"0px"},1000); 
+                    return false;
+                }
+            );
 
             // 헤더 스크롤이벤트
             var headerH=$("header").height(); // 헤더 높이 변수 선언
@@ -108,7 +108,7 @@
         })
     </script>
 
-    <!-- 컨텐츠 부드럽게 올라가기 -->
+    <!-- AOS 컨텐츠 부드럽게 올라가기 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -116,55 +116,6 @@
             AOS.init();
         });
       </script>
-
-    <!-- 마우스 자동 휠 -->
-    <!-- <script type="text/javascript">
-        window.onload = function () {
-            var elm = ".box";
-            $(elm).each(function (index) {
-                // 개별적으로 Wheel 이벤트 적용
-                $(this).on("mousewheel DOMMouseScroll", function (e) {
-                    e.preventDefault();
-                    var delta = 0;
-                    if (!event) event = window.event;
-                    if (event.wheelDelta) {
-                        delta = event.wheelDelta / 120;
-                        if (window.opera) delta = -delta;
-                    } 
-                    else if (event.detail)
-                        delta = -event.detail / 3;
-                    var moveTop = $(window).scrollTop();
-                    var elmSelecter = $(elm).eq(index);
-                    // 마우스휠을 위에서 아래로
-                    if (delta < 0) {
-                        if ($(elmSelecter).next() != undefined) {
-                            try{
-                                moveTop = $(elmSelecter).next().offset().top;
-                            }catch(e){}
-                        }
-                    // 마우스휠을 아래에서 위로
-                    } else {
-                        if ($(elmSelecter).prev() != undefined) {
-                            try{
-                                moveTop = $(elmSelecter).prev().offset().top;
-                            }catch(e){}
-                        }
-                    }
-                     
-                    // 화면 이동 0.8초(800)
-                    $("html,body").stop().animate({
-                        scrollTop: moveTop + 'px'
-                    }, {
-                        duration: 1000, complete: function () {
-                        }
-                    });
-                });
-            });
-
-            $("main>section").unwrap();
-            $("section").css("height","100%");
-        }
-    </script> -->
     
     <!-- 타이틀 영상 삽입 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
@@ -240,11 +191,11 @@
                     <img src="img/me_emogi.jpg" alt="본인 사진">
                     <ul class="list center">
                         <li>안녕하세요. 신입 웹 퍼블리셔입니다.</li>
-                        <li>이름 : 이세희</li>
-                        <li>나이 : 26</li>
-                        <li>학력 : 신구대학교 섬유의상코디과 졸업</li>
-                        <li>경력 : 주인정보시스템</li>
-                        <li>교육 : #이젠모란웹디자인 #웹퍼블리싱과정 #5개월수료</li>
+                        <li class="h3">이세희</li>
+                        <li>26</li>
+                        <li><span>학력</span>  신구대학교 섬유의상코디과 졸업</li>
+                        <li><span>경력</span>  주인정보시스템</li>
+                        <li><span>교육</span>  #이젠모란웹디자인 #웹퍼블리싱과정 #5개월수료</li>
                     </ul>
                 </div>
             </div>
@@ -253,7 +204,6 @@
         <section id="Skill" class="box paddingT50 paddingB50 paddingL50 paddingR50">
             <div data-aos="fade-up" data-aos-duration="5000" class="wrap">
                 <h2 class="h2">Skill</h2>
-                <p class="p">공부하면서 익힌 스킬들입니다.</p>
                 <ul class="list flex between">
                     <li>HTML5</li>
                     <li>CSS3</li>
@@ -279,71 +229,84 @@
                 <h2 class="h2">Portfolio</h2>
                 <p class="p">총 6개의 작업물이 있습니다</p>
                 <ul class="flex">
-                    <li data-aos="fade-left" data-aos-duration="5000" class="flex">
+                    <!-- 피규어-주소,이미지,설명 -->
+                    <li data-aos="zoom-in-up" data-aos-duration="5000" class="flex">
                         <a href="https://jjmk07141.github.io/pf1-accuniq/">
                             <figure>
                                 <img src="img/pf1_Acc.jpg" alt="Accuniq">
                                 <figcaption>
                                     <h3>Accuniq</h3>
-                                    <li>pc</li>
-                                    <li>HTML / CSS / JQUERY</li>
-                                    <li>100%</li>
+                                    <ul>
+                                        <li>pc</li>
+                                        <li>사용언어 : HTML / CSS / JQUERY</li>
+                                        <li>참여도 : 100%</li>
+                                    </ul>
                                 </figcaption>
+
                             </figure>
                         </a>
                     </li>
-                    <li data-aos="fade-left" data-aos-duration="5000" class="flex">
+                    <li data-aos="zoom-in-up" data-aos-duration="5000" class="flex">
                         <a href="https://jjmk07141.github.io/pf2-lpoint/">
                             <figure>
                                 <img src="img/pf2_lp.jpg" alt="HBPaper">
                                 <figcaption>
                                     <h3>Lpoint</h3>
-                                    <li>pc</li>
-                                    <li>HTML / CSS / JQUERY</li>
-                                    <li>100%</li>
+                                    <ul>
+                                        <li>pc</li>
+                                        <li>사용언어 : HTML / CSS / JQUERY</li>
+                                        <li>참여도 : 100%</li>
+                                    </ul>
                                 </figcaption>
+
                             </figure>
                         </a>
                     </li>
-                    <li data-aos="fade-left" data-aos-duration="5000" class="flex">
+                    <li data-aos="zoom-in-up" data-aos-duration="5000" class="flex">
                         <a href="https://jjmk07141.github.io/pf3-hbpaper/">
                             <figure>
                                 <img src="img/pf3_hb.jpg" alt="HBPaper">
                                 <figcaption>
                                     <h3>HBPaper</h3>
-                                    <li>pc</li>
-                                    <li>반응형</li>
-                                    <li>HTML / CSS / JQUERY</li>
-                                    <li>100%</li>
+                                    <ul>
+                                        <li>pc / 반응형</li>
+                                        <li>사용언어 : HTML / CSS / JQUERY</li>
+                                        <li>참여도 : 100%</li>
+                                    </ul>
                                 </figcaption>
+
                             </figure>
                         </a>
                     </li>
-                    <li data-aos="fade-left" data-aos-duration="5000" class="flex">
+                    <li data-aos="zoom-in-up" data-aos-duration="5000" class="flex">
                         <a href="https://jjmk07141.github.io/pf3_HBpaper_re/">
                             <figure>
                                 <img src="img/pf4_hbre.jpg" alt="HBPaper_re">
                                 <figcaption>
                                     <h3>HBPaper_Redisign</h3>
-                                    <li>pc</li>
-                                    <li>반응형</li>
-                                    <li>HTML / CSS / JQUERY</li>
-                                    <li>100%</li>
+                                    <ul>
+                                        <li>pc / 반응형</li>
+                                        <li>사용언어 : HTML / CSS / JQUERY</li>
+                                        <li>참여도 : 100%</li>
+                                    </ul>
                                 </figcaption>
+
                             </figure>
                         </a>
                     </li>
-                    <li data-aos="fade-left" data-aos-duration="5000" class="flex">
+                    <li data-aos="zoom-in-up" data-aos-duration="5000" class="flex">
                         <a href="https://jjmk07141.github.io/pf4-Hitejinro/">
                             <figure>
                                 <img src="img/pf5_hite.jpg" alt="Hitejinro">
                                 <figcaption>
                                     <h3>HBPaper_Redisign</h3>
-                                    <li>pc</li>
-                                    <li>반응형</li>
-                                    <li>HTML / CSS / JQUERY</li>
-                                    <li>100%</li>
+                                    <ul>
+                                        <li>pc / 반응형</li>
+                                        <li>사용언어 : HTML / CSS / JQUERY</li>
+                                        <li>참여도 : 100%</li>
+                                    </ul>
                                 </figcaption>
+
                             </figure>
                         </a>
                     </li>
@@ -354,25 +317,22 @@
         <section id="Contact" class="box paddingT50 paddingB50 paddingL50 paddingR50">
             <div data-aos="fade-up" data-aos-duration="5000" class="wrap">
                 <h2 class="h2">Contact</h2>
-                <div class="center">
+                <div>
                     <ul>
                         <li>
                             <p>Gmail</p>
-                            <br>
                             <a href="#">
                                 <img src="img/mail.svg" alt="Gmail">
                             </a>
                         </li>
                         <li>
                             <p>GitHub</p>
-                            <br>
                             <a href="#">
                                 <img src="img/github.svg" alt="GitHub">
                             </a>
                         </li>
                         <li>
                             <p>Notion</p>
-                            <br>
                             <a href="#">
                                 <img src="img/notion.svg" alt="Notion">
                             </a>

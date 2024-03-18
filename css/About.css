@@ -1,18 +1,19 @@
 section#About{
-  margin: 60px auto;
+  /*! margin: 60px auto; */
   position: relative;
 }
 section#About:before{
   content: "";
   width: 60%;
-  height: 88.8%;
+  height: 100%;
   display: block;
   position: absolute;
   right: 0;
-  bottom: 50px;
+  /*! bottom: 50px; */
   background: linear-gradient(to right, white, #93b3a0);
   overflow: hidden;
   z-index: -1;
+  top: 0;
 }
 section#About .wrap{
 /*   height: 750px; */
@@ -33,7 +34,9 @@ section#About .wrap ul{
   padding: 0 10%;
 }
 section#About .wrap ul span{
-  
+  vertical-align: baseline;
+  font-size: 19px;
+  color: #666;
 }
 section#About .wrap ul li{
   font-family: 'Noto Sans KR', sans-serif;
@@ -49,6 +52,6 @@ section#About .wrap div img{
   width: 475px;
   height: 480px;
   border-radius: 20px 50px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 13px -5px, rgb(0, 0, 0) 0px 8px 16px -8px;
+  /*! box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 13px -5px, rgb(0, 0, 0) 0px 8px 16px -8px; */
   z-index: 2;
 }
