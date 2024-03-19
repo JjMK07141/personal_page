@@ -27,33 +27,29 @@ section#Contact .wrap div{
   margin: 0 auto;
   padding-bottom: 5%;
 }
-section#Contact .wrap ul{
+section#Contact .wrap div ul{
   font-size: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-section#Contact .wrap ul li{
+section#Contact .wrap div ul li{
   font-family: 'Noto Sans KR', sans-serif;
   width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section#Contact .wrap ul li p{
-  width: 150px;
+section#Contact .wrap div ul li p{
   font-size: 30px;
   font-weight: 500;
   font-family: 'Noto Sans KR', sans-serif;
 }
 section#Contact .wrap ul li a{
 }
-section#Contact .wrap ul li a img{
-
-}
-section#Contact .wrap ul li:nth-child(1) img{
-  width: 60px;
+section#Contact .wrap ul li img{
+  width: 100px;
 }
 section#Contact .wrap ul li:not(:first-child) a img{
-  width: 50px;
+  width: 100px;
 }

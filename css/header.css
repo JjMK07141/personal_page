@@ -66,10 +66,6 @@ header ul li a{
   text-transform: uppercase;
   font-size: 18px;
 }
-.colorchan{
-  color: #000;
-  font-size: 18px;
-}
 /* 자식선택자 : 바로 아래에 있는 선택자(태그) */
 header div.wrap>a{
   font-size: 0;
@@ -79,4 +75,15 @@ header div.wrap>a{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.hdcolor{
+  color: #eee;
+}
+.recolor{
+  color: #4e6657 !important;
+  transform: scale(1.2);
+}
+.colorchan{
+  color: #000;
+  font-size: 18px;
 }

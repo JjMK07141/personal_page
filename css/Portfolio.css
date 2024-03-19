@@ -1,5 +1,5 @@
 section#Portfolio{
-  background-color: #eee;
+  background-color: #fff;
 }
 section#Portfolio .wrap{
   height: 100%;
@@ -18,7 +18,7 @@ section#Portfolio .wrap p{
   padding-bottom: 30px;
 }
 section#Portfolio .wrap>ul{
-  background-color: #155a3175;
+  background-color: #155a315c;
   border-radius: 20px;
   flex-wrap: wrap;
   justify-content: center;

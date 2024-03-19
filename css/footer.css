@@ -4,7 +4,7 @@ footer{
    display: flex;
    justify-content: center;
    gap: 23px;
-   height: 100px;
+   height: 60px;
    align-items: center;
    font-family: 'Noto Sans KR', sans-serif;
 }
@@ -22,7 +22,7 @@ footer a.top{
    background-color: black;
    color: white;
    position: fixed;
-   bottom: 100px;
+   bottom: 60px;
    right: 50px;
    border-radius: 20px;
    z-index: 1;
