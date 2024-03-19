@@ -1,0 +1,56 @@
+footer{
+   background-color: rgba(3,38,17,0.7);
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   gap: 23px;
+   height: 60px;
+   align-items: center;
+   font-family: 'Noto Sans KR', sans-serif;
+}
+footer h1.p{
+
+}
+footer p.p{
+
+}
+footer span.p{
+}
+footer a.top{
+   width: 70px;
+   height: 90px;
+   background-color: black;
+   color: white;
+   position: fixed;
+   bottom: 60px;
+   right: 50px;
+   border-radius: 20px;
+   z-index: 1;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+   text-transform: uppercase;
+ }
+ footer a.top:hover{
+   background-color: #4e6657;
+   border-radius: 100%; 
+   transition: all 1.5s ease-out;
+ }
+ footer a.top:not(:hover){
+  transition: all 1s ease-out;
+ }
+/* 탑버튼 화살표 */
+ footer a.top::before{
+   content: "";
+   background-image: url(../img/north_arrow.svg);
+   width: 24px;
+   height: 24px;
+ }
+/* hover시 화살표 위로 살짝 가게 */
+ footer a.top:hover::before{
+   transform: translateY(-7px);
+ }
+ 

@@ -1,0 +1,55 @@
+section#Contact{
+  position: relative;
+}
+section#Contact:before{
+  content: "";
+  width: 60%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  background: linear-gradient(to left, white, #93b3a0);
+  overflow: hidden;
+  z-index: -1;
+  top: 0;
+}
+section#Contact .wrap{
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+}
+section#Contact .wrap h2{
+  padding-bottom: 30px;
+  width: 35%;
+}
+section#Contact .wrap div{
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+section#Contact .wrap div ul{
+  font-size: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section#Contact .wrap div ul li{
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#Contact .wrap div ul li p{
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+section#Contact .wrap ul li a{
+}
+section#Contact .wrap ul li img{
+  width: 100px;
+}
+section#Contact .wrap ul li:not(:first-child) a img{
+  width: 100px;
+}

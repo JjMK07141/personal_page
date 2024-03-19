@@ -88,6 +88,22 @@
                 }
             );
 
+            //클릭한 메뉴표시
+            $("header ul li a").click(
+                function(){
+                   $("header ul li a").addClass("hdcolor");
+                   $("header ul li a").not(this).removeClass("recolor");
+                   $(this).addClass("recolor");
+                   return false;
+                }
+            );
+            //버튼 클릭시 원래 색상으로 표시
+            $("header ul li:nth-child(1) a").click(
+                function(){
+                    $("header ul li a").removeClass();
+                }
+            );
+
             // 헤더 스크롤이벤트
             var headerH=$("header").height(); // 헤더 높이 변수 선언
             $(window).scroll(function(){
@@ -320,22 +336,15 @@
                 <div>
                     <ul>
                         <li>
-                            <p>Gmail</p>
-                            <a href="#">
-                                <img src="img/mail.svg" alt="Gmail">
-                            </a>
+                            <p>tpgml0713@gmail.com</p>
                         </li>
                         <li>
-                            <p>GitHub</p>
-                            <a href="#">
+                            <a href="https://github.com/JjMK07141">
                                 <img src="img/github.svg" alt="GitHub">
                             </a>
                         </li>
                         <li>
-                            <p>Notion</p>
-                            <a href="#">
-                                <img src="img/notion.svg" alt="Notion">
-                            </a>
+                            <img src="img/KakaoTalk_QR.png" alt="카카오톡 프로필 QR">
                         </li>
                     </ul>
                 </div>

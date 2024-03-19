@@ -1,0 +1,115 @@
+.wrap{
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/* 패딩 */
+.padding50{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.paddingT50{
+  padding-top: 50px;
+}
+.paddingB50{
+  padding-bottom: 50px;
+}
+.paddingL50{
+  padding-left: 50px;
+}
+.paddingR50{
+  padding-right: 50px;
+}
+
+/* 마진 */
+.marginT50{
+  margin-top: 50px;
+}
+.marginB50{
+  margin-bottom: 50px;
+}
+.marginL50{
+  margin-left: 50px;
+}
+.marginR50{
+  margin-right: 50px;
+}
+
+/* 글자 */
+.h1{
+  font-size: 64px;
+}
+/* 대제목 */
+.h2{
+  padding-top: 15px;
+  font-size: 54px;
+  margin-bottom: 25px;
+  color: black;
+  font-family: 'Black Han Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.h3{
+  font-size: 44px;
+}
+.h4{
+  font-size: 34px;
+}
+.h5{
+  font-size: 24px;
+}
+.h6{
+  font-size: 20px;
+}
+.p{
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 정렬 */
+.flex{
+  display: flex;
+}
+.between{
+  justify-content: space-between;
+}
+.center{
+  justify-content: center;
+}
+
+/* 가상선택자 작대기 */
+/* main .h2::before{
+  content: "";
+  font-size: 25px;
+  width: 35px;
+  height: 2px;
+  background-color: black;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  display: none;
+} */
+
+/* 가상선택자 사선 */
+/* .sasun::before{
+  content: "/";
+  margin-right: 30px;
+  color: #6999;
+} */
+
+/* 블럭, 인라인 */
+.block{
+  display: block;
+}
+
+/* 글자 가운데 정렬 */
+.tcenter{
+  text-align: center;
+}
+
+/* 제이쿼리 페이지 스크롤 */
+html,body{
+  height:100.5%;
+}
