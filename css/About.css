@@ -8,7 +8,6 @@ section#About:before{
   display: block;
   position: absolute;
   right: 0;
-  /*! bottom: 50px; */
   background: linear-gradient(to right, white, #93b3a0);
   overflow: hidden;
   z-index: -1;
@@ -22,9 +21,11 @@ section#About .wrap h2{
   width: 15%;
 }
 section#About .wrap p{
-  font-size: 25px;
+  font-size: 20px;
   width: 580px;
-  font-family: 'Noto Sans KR', sans-serif;
+  color: #555;
+  line-height: 1.5;
+  padding-top: 10px;
 }
 section#About .wrap ul{
   font-size: 23px;
