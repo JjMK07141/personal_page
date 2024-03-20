@@ -37,10 +37,10 @@ footer a.top{
  footer a.top:hover{
    background-color: #4e6657;
    border-radius: 100%; 
-   transition: all 1.5s ease-out;
+   transition: all 0.5s ease-out;
  }
  footer a.top:not(:hover){
-  transition: all 1s ease-out;
+  transition: all 0.5s ease-out;
  }
 /* 탑버튼 화살표 */
  footer a.top::before{
