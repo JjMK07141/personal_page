@@ -35,8 +35,8 @@ header .wrap *{
 }
 header h1{
   text-align: center;
-  background-color: rgba(0,0,0,0.6);
-  align-self: baseline;
+/*   background-color: rgba(0,0,0,0.6);
+  align-self: baseline; */
   border-radius: 0 0 10px 10px;
 }
 header h1 a{
