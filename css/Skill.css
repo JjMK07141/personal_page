@@ -115,6 +115,7 @@ section#Skill .wrap ul li:nth-child(10)::before{
   display: flex;
   flex-direction: column;
 }
+
 /* section#Skill .wrap ul li:nth-child(5)::before{
   background-image: url(../img/zc.png);
   background-size: 90%;
