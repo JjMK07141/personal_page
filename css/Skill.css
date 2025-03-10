@@ -1,5 +1,5 @@
 section#Skill{
-  background-color: #155a3175;
+  background-color: #cecdbb;
   height: 100vh;
   box-sizing: border-box;
 }
@@ -20,10 +20,10 @@ section#Skill .wrap p{
   color: #474747;
 }
 section#Skill .wrap ul{
-  padding: 50px;
+  padding: 25px;
   flex-wrap: wrap;
   gap: 70px;
-  margin: 100px 130px;
+  margin: 125px 85px;
 }
 section#Skill .wrap ul li{
   width: 100px;
@@ -70,6 +70,12 @@ section#Skill .wrap ul li:nth-child(4)::before{
   background-position: center;
 }
 section#Skill .wrap ul li:nth-child(5)::before{
+  background-image: url(../img/vv.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* section#Skill .wrap ul li:nth-child(5)::before{
   background-image: url(../img/zc.png);
   background-size: 90%;
   background-repeat: no-repeat;
@@ -92,46 +98,42 @@ section#Skill .wrap ul li:nth-child(8)::before{
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
-}
-section#Skill .wrap ul li:nth-child(9)::before{
+} */
+section#Skill .wrap ul li:nth-child(6)::before{
   background-image: url(../img/ps.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
-section#Skill .wrap ul li:nth-child(10)::before{
+section#Skill .wrap ul li:nth-child(7)::before{
   background-image: url(../img/ai.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
-section#Skill .wrap ul li:nth-child(11)::before{
+section#Skill .wrap ul li:nth-child(8)::before{
   background-image: url(../img/id.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
-section#Skill .wrap ul li:nth-child(12)::before{
+section#Skill .wrap ul li:nth-child(9)::before{
   background-image: url(../img/pr.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
-section#Skill .wrap ul li:nth-child(13)::before{
+section#Skill .wrap ul li:nth-child(10)::before{
   background-image: url(../img/ae.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
-section#Skill .wrap ul li:nth-child(14)::before{
-  background-image: url(../img/vv.png);
-  background-size: 90%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-section#Skill .wrap ul li:nth-child(15)::before{
+/* section#Skill .wrap ul li:nth-child(11)::before{
   background-image: url(../img/ov.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */

@@ -1,18 +1,20 @@
 section#About{
   position: relative;
+  background-color: #cecdbb;
 }
-section#About:before{
+/*section#About:before{
   content: "";
-  width: 60%;
+  width: 0%;
   height: 100%;
   display: block;
   position: absolute;
   right: 0;
   background: linear-gradient(to right, white, #93b3a0);
+  background-color: #cecdbb;
   overflow: hidden;
   z-index: -1;
   top: 0;
-}
+}*/
 section#About .wrap{
   height: 100%;
   width: 100%;
@@ -26,9 +28,8 @@ section#About .wrap div{
   align-items: center;
 }
 section#About .wrap div img{
-  width: 475px;
-  height: 480px;
-  border-radius: 20px 50px;
+  width: 40%;
+  height: 35%;
   z-index: 2;
 }
 section#About .wrap div ul{
@@ -46,7 +47,7 @@ section#About .wrap div ul li span{
   color: #666;
 }
 section#About .wrap div ul p.p{
-  font-size: 20px;
+  font-size: 17px;
   width: 580px;
   color: #555;
   line-height: 1.5;

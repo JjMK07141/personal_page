@@ -117,3 +117,8 @@
 html,body{
   height:100.5%;
 }
+
+/* 어바웃.스킬.포폴 배경색색 */
+.bgc{
+  background-color: #cecdbb;
+}
