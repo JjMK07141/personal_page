@@ -1,6 +1,11 @@
 /* 타이틀영역 */
 div#title{
-
+  height: 100%;
+  background-color: white;
+  margin: 0 auto;
+  background-position-y: 50%, 105%;
+  position: relative;
+  height: 100vh;
 }
 /* .inline-YTPlayer{
   height: 50%;
