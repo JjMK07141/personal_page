@@ -1,15 +1,9 @@
 /* 타이틀영역 */
 div#title{
-  height: 100%;
   background-color: #172d21;
-  margin: 0 auto;
-  /* background-position-y: 50%, 105%; */
-  position: relative;
+  margin: auto;
   height: 100vh;
 }
-/* .inline-YTPlayer{
-  height: 50%;
-} */
 /*하위선택자*/
 div#title .wrap{ 
   display: flex;
@@ -19,7 +13,7 @@ div#title .wrap{
   display: none;
 }
 div#title .wrap h2{
-  color: white;
+  color: #cecdbb;
   font-size: 60px;
   letter-spacing: 2px;
   font-weight: 600;
@@ -30,8 +24,8 @@ div#title .wrap h2{
 div#title .wrap span{
   font-size: 75px;
   opacity: 1;
-  color: #98d3b0;
+  color: #cecdbb;
 }
-div p{
+/* div p{
   font-size: 45px;
-}
+} */
