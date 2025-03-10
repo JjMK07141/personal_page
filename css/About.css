@@ -8,7 +8,8 @@ section#About:before{
   display: block;
   position: absolute;
   right: 0;
-  background: linear-gradient(to right, white, #93b3a0);
+  /* background: linear-gradient(to right, white, #93b3a0); */
+  background-color: #cecdbb;
   overflow: hidden;
   z-index: -1;
   top: 0;
