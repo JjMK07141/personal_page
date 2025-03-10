@@ -2,9 +2,9 @@
 div#title{
 
 }
-.inline-YTPlayer{
+/* .inline-YTPlayer{
   height: 50%;
-}
+} */
 /*하위선택자*/
 div#title .wrap{ 
   display: flex;
