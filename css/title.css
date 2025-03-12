@@ -9,7 +9,7 @@ div#title .wrap{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 45px;
+  /* gap: 45px; */
   display: none;
 }
 div#title .wrap h2{

@@ -54,10 +54,10 @@ header div.wrap>a{
 }
 /* 타이틀영역 */
 div#title{
-  background-color: #eee;
+  /* background-color: #eee;
   background-image: url(https://raw.githubusercontent.com/JjMK07141/personal_page/main/img/main_unsplash.jpg);
   background-size: cover;
-  background-position: center bottom;
+  background-position: center bottom; */
 }
 /*하위선택자*/
 div#title div.wrap{ 
