@@ -74,14 +74,15 @@ section#Skill .wrap ul li:nth-child(5)::before{
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 section#Skill .wrap ul li:nth-child(6)::before{
   background-image: url(../img/ps.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  flex-direction: column;
+
 }
 section#Skill .wrap ul li:nth-child(7)::before{
   background-image: url(../img/ai.png);
