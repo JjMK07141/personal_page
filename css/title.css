@@ -1,7 +1,7 @@
 /* 타이틀영역 */
 div#title{
   background-color: #172d21;
-  /* margin: auto; */
+  margin: auto;
   height: 100%;
 }
 /*하위선택자*/
@@ -9,7 +9,7 @@ div#title .wrap{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* gap: 45px; */
+  gap: 45px;
   display: none;
 }
 div#title .wrap h2{
