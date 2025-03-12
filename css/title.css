@@ -1,8 +1,8 @@
 /* 타이틀영역 */
 div#title{
   background-color: #172d21;
-  margin: auto;
-  height: 100vh;
+  /* margin: auto; */
+  height: 100%;
 }
 /*하위선택자*/
 div#title .wrap{ 
