@@ -58,9 +58,9 @@ header div.wrap>a{
   background-image: url(https://raw.githubusercontent.com/JjMK07141/personal_page/main/img/main_unsplash.jpg);
   background-size: cover;
   background-position: center bottom;
-}
+} */
 /*하위선택자*/
-div#title div.wrap{ 
+/* div#title div.wrap{ 
   height: 885px;
   display: flex;
   flex-direction: column;
