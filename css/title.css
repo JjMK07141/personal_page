@@ -6,11 +6,17 @@ div#title{
 }
 /*하위선택자*/
 div#title .wrap{ 
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 45px;
+  display: none; */
+  height: 885px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 45px;
-  display: none;
+  font-family: 'Black Han Sans', sans-serif;
 }
 div#title .wrap h2{
   color: #cecdbb;
