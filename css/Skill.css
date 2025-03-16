@@ -1,6 +1,6 @@
 section#Skill{
   background-color: #cecdbb;
-  height: 100%;
+  height: 100vh;
   box-sizing: border-box;
 }
 section#Skill .wrap{
