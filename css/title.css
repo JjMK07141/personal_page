@@ -16,7 +16,7 @@ div#title .wrap{
   flex-direction: column;
   justify-content: center;
   gap: 45px;
-  font-family: font-family:
+  font-family: "Brawler", serif;
 }
 div#title .wrap h2{
   color: #cecdbb;
@@ -25,7 +25,7 @@ div#title .wrap h2{
   font-weight: 600;
   padding-top: 7%;
 /*   text-shadow: -1px -1px white, -1px -1px white, 1px 1px white, 1px 1px white; */
-  font-family: font-family:
+  font-family: "Brawler", serif;
 }
 div#title .wrap span{
   font-size: 75px;
