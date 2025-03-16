@@ -1,7 +1,8 @@
 section#Skill{
   background-color: #cecdbb;
-  height: 100vh;
+  height: 100%;
   box-sizing: border-box;
+  margin-top: 10px;
 }
 section#Skill .wrap{
   height: 100%;
