@@ -81,6 +81,7 @@ section#Skill .wrap ul li:nth-child(6)::before{
   background-image: url(../img/ps.png);
   background-size: 90%;
   background-repeat: no-repeat;
+  display: flex;
   background-position: center;
 }
 section#Skill .wrap ul li:nth-child(7)::before{
